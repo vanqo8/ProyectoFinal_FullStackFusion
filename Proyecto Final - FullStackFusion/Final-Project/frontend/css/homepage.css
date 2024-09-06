@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: #11111B;
+}
+
+.navbar{
+    font-family: 'Oxanium', sans-serif;
+}
+
+header {
+    background-color: #212529; 
+}
+
+/* ----------- Homepage ------------ */
+#homepage {
+    background: url('/img/homepage/homepage-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Oxanium', sans-serif;
+}
+.py-5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+}
+
+#homepage .btn-primary {
+    background-color: #FFC01D;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    
+}
+
+a:hover:not(#cart) {
+    color: #FFC01D;
+}
+  
+/* ----------- Products ------------ */
+#products h2{
+    /*color: #d22779;*/
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    padding-bottom: 2vw;
+    font-family: 'Oxanium', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+#products p {
+    color: #d22779;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#products .card {
+    transition: transform 0.2s;
+    font-family: 'Oxanium', sans-serif;
+    background-color: #333;
+    color: #f6f0ff;
+    width: 300px;
+    height: 400px; 
+    overflow: hidden; 
+}
+
+
+#products .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+  }
+
+#products  .card-body {
+    height: calc(100% - 200px); 
+  }
+
+#products .card p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+#products .card .btn-primary {
+    background-color: #FFC01D;
+    border: none;
+    color: black;
+    font-weight: 600;
+
+}
+
+#products .card:hover {
+    transform: scale(1.05);
+}
+
+#products .card-title {
+    color: #d22779;
+}
+
+#logo {
+    height: 66px;
+}
+
+.segunda-card {
+    background-color: #000000;
+    background-color: #333;
+    border: 1px solid #333;
+    margin-right: 0;
+    margin-left: 0;    
+}
+
+.segunda-card .card-body .card-title {
+    color: #d22779;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.segunda-card .card-body p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.segunda-card  .card-body .subtitulo {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.segunda-card .card-body .btn-primary {
+    background-color: #FFC01D;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+
+.py-6 {
+    margin-top: -100px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-color: #1B1B2B ;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100vh; /* 100% de la altura de la pantalla */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Cubre el área completa del slider */
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para el contenido del slider */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.carousel-caption h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-caption .btn {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+}
+
+  /* Estilos personalizados para las cards */
+
+
+  section.container.my-7 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+.container my-7 {          
+    width: 100%;    
+}
+
+.my-7 h2 {
+    color: white;
+    font-family: 'Oxanium', sans-serif; 
+}
+
+
+
+  .testimonial-card {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonial-stars {
+    color: #ffc107; /* Color amarillo para las estrellas */
+    margin-bottom: 10px;
+}
+
+.testimonial-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.whatsapp-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background-color: #212529; 
+    color: #888;
+}
+
+.titulo-slider {
+    text-align: left;
+}
+
+#carrusel .btn-primary {
+    background-color: #FFC01D;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+}
+
+
+
+

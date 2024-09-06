@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Link styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cart.css">
+	<link rel="stylesheet" href="/css/message.css">
+    <script src="./js/cartService.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    <title>FSF</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="homepage.html"><img src="./img/logo.png" alt="Logo" id="logo"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./homepage.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">Productos</a>
+                    </li>            
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about-us.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./login.html" id="login">
+                            <i class="fa-solid fa-user" style="color: #FFC01D;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cart.html" id="cart">
+                            <i class="fa-solid fa-cart-shopping" style="color: #FFC01D;"></i>
+                            <span id="cuenta-carrito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p id="carrito-vacio">Ups! No hay productos en el carrito. <a href="./product.html" style="color: #FFC01D;">Agrega algunos</a></p>
+        <section id="productos-container"></section>
+        <section id="totales">
+            <p>Total unidades: <span id="unidades">0</span></p>
+            <p>Total precio: $<span id="precio">0</span></p>
+            <button id="compra" data-tipo="exito">Comprar</button>
+            <button id="reiniciar">Reiniciar carrito</button>
+        </section>
+
+        <!-- Toast Container -->
+		<div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1050;"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-white text-center">
+        <p>&copy; 2024 FullStack Fusion. Todos los derechos reservados. <span><a href="./terminosycondiciones.html">Téminos y condiciones</a></span></p>        
+    </footer>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

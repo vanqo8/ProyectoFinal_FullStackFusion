@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Link styles -->
+  <link rel="stylesheet" href="/css/style.css" >
+  <!-- Link product styles -->
+  <link rel="stylesheet" href="css/about-us.css">
+  <script src="./js/cartService.js" defer></script>
+	<script src="./js/product.js" defer></script>
+	<title>FSF</title>
+</head>
+<body>
+	<header>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a href="homepage.html"><img src="./img/logo.png" alt="Logo" id="logo"></a>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="./homepage.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./product.html">Productos</a>
+					</li>            
+					<li class="nav-item active">
+						<a class="nav-link" href="./about-us.html" style="color: #FFC01D;">Nosotros</a>
+					</li>
+					<li class="nav-item">
+						<a href="./login.html" id="login">
+							<i class="fa-solid fa-user" style="color: #FFC01D;"></i>
+						</a>
+					</li>
+          <li class="nav-item">
+						<a href="./cart.html" id="cart">
+              <i class="fa-solid fa-cart-shopping" style="color: #FFC01D;"></i>
+              <span id="cuenta-carrito">0</span>
+            </a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+    <!-- About Us -->
+    <section id="about-us" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+
+            <div class="card__image">
+              <img src="./img/about-us/Angela.png" alt="card image">
+            </div>
+
+            <div class="card__content">
+              <span class="card__title">Web Designer</span>
+              <span class="card__name">Ángela Gómez</span>
+              <p class="card__text">Me encargué del desarrollo web del proyecto, creando una plataforma funcional y alineada con las necesidades del cliente.</p>            
+              <div class="icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook" style="color: #007bff;"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram" style="color: #e33a1c;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="img/about-us/dev.jpg" alt="card image">
+            </div>   
+            <div class="card__content">
+              <span class="card__title">Jose Zipaquirá</span>
+              <span class="card__name">Developer</span>
+              <p class="card__text">Desarrollador web responsable de crear y optimizar sitios, mejorando la funcionalidad y experiencia del usuario.</p>           
+              <div class="icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook" style="color: #007bff;"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram" style="color: #e33a1c;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">     
+            <div class="card__image">
+              <img src="img/about-us/developer.JPG" alt="card image">
+            </div>
+            <div class="card__content">
+              <span class="card__title">Jhony Arias</span>
+              <span class="card__name">Back End Developer</span>
+              <p class="card__text">Me encargue de diseñar la arquitectura, y construir el sitio web de forma funcional y atractiva.</p>         
+              <div class="icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook" style="color: #007bff;"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram" style="color: #e33a1c;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">     
+            <div class="card__image">
+              <img src="./img/about-us/Rossnaira.jpg" alt="card image">
+            </div>
+            <div class="card__content">
+              <span class="card__title">Rossnaira Córdoba</span>
+              <span class="card__name">Web Developer</span>
+              <p class="card__text">Me especializo en diseño web, creando interfaces atractivas y funcionales que mejoran la experiencia del usuario..</p>         
+              <div class="icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook" style="color: #007bff;"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram" style="color: #e33a1c;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">     
+            <div class="card__image">
+              <img src="./img/about-us/hero.webp" alt="card image">
+            </div>
+            <div class="card__content">
+              <span class="card__title">Julián Gelvez</span>
+              <span class="card__name">Front End Developer</span>
+              <p class="card__text">Desarrollé el sitio web del proyecto, asegurando su funcionalidad y diseño según los objetivos establecidos.</p>         
+              <div class="icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook" style="color: #007bff;"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram" style="color: #e33a1c;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="img/about-us/ui-designer.jpg" alt="card image">
+            </div>
+            <div class="card__content">
+              <span class="card__title">David Quincha</span>
+              <span class="card__name">UI Designer</span>
+              <p class="card__text">Colaborador en el diseño de la página e-commerce y en la programación en los códigos de rutas.</p>  
+              <div class="icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook" style="color: #007bff;"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram" style="color: #e33a1c;"></i>
+                </a>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </section>
+	</main>
+  
+	<!-- Footer -->
+  <footer class="py-4 text-white text-center">
+    <p>&copy; 2024 FullStack Fusion. Todos los derechos reservados. <span><a href="./terminosycondiciones.html">Téminos y condiciones</a></span></p>        
+  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/about-us.js"></script>
+</body>
+</html>
